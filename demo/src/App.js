@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SlotPicker from 'slotpicker';
+import SlotPicker from './SlotPicker';
 import secondsToTime from './utils/secToTime';
 // import dayjs from 'dayjs'
 
@@ -17,7 +17,7 @@ function App() {
             unavailableSlots={[780]}
             interval={interval}
             lang='en'
-            selected_date={new Date()}
+            selected_date={new Date()} 
             onSelectTime={(val) => setSelectedTime(val)}
           />
         </div>
