@@ -51,7 +51,7 @@ export default function TimeSlot({
             className='radioBtn'
           />
         )}
-        <span class="dp-tick">
+        <span className="dp-tick">
           <strong>
             {
               is_pure_time ? dayjs.utc(dayjs.duration(time_s, "s").as("milliseconds")).get('m') : null

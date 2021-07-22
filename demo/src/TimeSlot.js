@@ -14,7 +14,7 @@ export default function TimeSlot({
   is_selected,
   onSelect,
 }) {
-    console.log(time_s);
+    // console.log(time_s);
    let is_pure_time = dayjs
    .utc(dayjs.duration(time_s, "s").as("milliseconds"))
    .get('s') == 0;
